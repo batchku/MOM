@@ -1,4 +1,4 @@
-#N canvas 383 369 836 396 10;
+#N canvas 364 225 842 412 10;
 #X obj 145 124 vsl 15 64 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 120 223 hsl 64 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
@@ -43,6 +43,8 @@
 #X text 138 203 [/v];
 #X text 139 252 [/h];
 #X text 138 303 [/s];
+#X obj 13 6 inlet;
+#X obj 18 32 route /v /h /s;
 #X connect 0 0 31 0;
 #X connect 1 0 32 0;
 #X connect 2 0 3 0;
@@ -82,4 +84,8 @@
 #X connect 35 0 0 0;
 #X connect 36 0 1 0;
 #X connect 37 0 21 0;
+#X connect 41 0 42 0;
+#X connect 42 0 0 0;
+#X connect 42 1 1 0;
+#X connect 42 2 21 0;
 #X coords 0 -1 1 1 100 220 1 100 100;
